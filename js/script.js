@@ -1,5 +1,5 @@
 // Welcome message
-alert("Selamat datang di Nua Corp!");
+alert("Selamat datang di Nua Company!");
 const welcomeName = prompt("Masukkan nama Anda:");
   const nameTarget = document.getElementById("welcomeName");
   if (nameTarget) {
