@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nua Company</title>
+
+        <!-- CSS External -->
+        <link rel="stylesheet" href="css\style.css">
+
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    </head>
+    
+    <style>
+    /* Mode gelap sebagai default */
+    body {
+      background-color: #424141;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1, p {
+      margin: 0 0 1em 0;
+    }
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+    </style>
+
+    <body>
+        <!-- HEADER -->
+        <header class="main-header p-3">
+            <div class="logo"></div>
+            <nav class="flex flex-wrap justify-center gap-1 py-2 sticky top-0 z-10 border-b border-gray-200">
+                <a href="#home" class="px-4 py-2 border bg-[rgb(157,229,253)] rounded hover:bg-blue-400 text-sm sm:text-base">Home</a>
+                <a href="#profile" class="px-4 py-2 border bg-[rgb(157,229,253)] rounded hover:bg-blue-400 text-sm sm:text-base">Our Profile</a>
+                <a href="#portfolio" class="px-4 py-2 border bg-[rgb(157,229,253)] rounded hover:bg-blue-400 text-sm sm:text-base">Portfolio</a>
+                <a href="#message" class="px-4 py-2 border bg-[rgb(157,229,253)] rounded hover:bg-blue-400 text-sm sm:text-base">Message Us</a>
+            </nav>
+        </header>
+        
+        <main>
+            <!-- HOME -->
+            <section id="home" class="min-h-screen flex items-center justify-center">
+                <h1 class="text-2xl font-bold mb-2">Welcome To Nua Corp, <span id="welcomeName"></span> <br><b>The Tech Company Pushing the Boundaries of Innovation</b></h1>
+                <div class="bg-home"></div>
+                <br>
+                <h1 class="text-3xl font-bold "></h1>
+            </section>
+        <hr>
+        <hr>
+            <!-- PROFILE -->
+            <section id="profile" class="min-h-screen flex items-center justify-center">
+                <div class="bg-profile"></div>
+                <h1 class="text-3xl font-semibold"><b>Nua</b>. <br/> Didirikan pada tahun 2024 oleh visioner muda Yanuar Ramadhan, Nua hadir bukan hanya sebagai pemain baru, melainkan sebagai kekuatan pendorong yang siap mendefinisikan ulang cara kita berinteraksi dengan teknologi.</h1>
+            </section>
+        <hr>
+        <hr>
+            <!-- PORTFOLIO -->
+            <section id="portfolio" class="min-h-screen flex items-center justify-center">   
+                <div class="grid md:grid-cols-3 gap-4">
+                    <img src="css/get-started.jpg" alt="Get Started" class="mb-2 w-full rounded" />
+                    <img src="css/login,signup,home.jpg" alt="Login, Signup, Bottom Nav" class="mb-2 w-full rounded" />
+                    <img src="css/splash.jpg" alt="Splash" class="mb-2 w-full rounded" />
+                </div>           
+            </section>
+        <hr>
+        <hr>
+            <!-- MESSAGE US -->
+            <section id="message">
+                <div class="bg-message"></div>
+                <h2 class="text-xl font-bold mb-4 text-center">Message Us</h2>
+                <div class="flex flex-col md:flex-row gap-6">
+        
+                <form id="messageForm" class="flex flex-col gap-3 md:w-1/2">
+                    <label>
+                        Name:
+                        <input type="text" name="name" required class="w-full border px-3 py-2 rounded" />
+                    </label>
+                    <label>
+                        Birthdate:
+                        <input type="date" name="birthdate" required class="w-full border px-3 py-2 rounded" />
+                    </label>
+                    <label>Gender:</label>
+                    <div class="flex gap-4 text-sm">
+                        <label><input type="radio" name="gender" value="Male" /> Male</label>
+                        <label><input type="radio" name="gender" value="Female" /> Female</label>
+                    </div>
+                    <label>
+                        Message:
+                        <textarea name="message" rows="4" required class="w-full border px-3 py-2 rounded"></textarea>
+                    </label>
+                    <button type="submit" class="bg-[rgb(157,229,253)] hover:bg-blue-400 text-white py-2 rounded">
+                        Submit
+                    </button>
+                </form>
+
+            <div id="infoBox" class="border p-4 rounded md:w-1/2 text-sm leading-relaxed">
+            <div class="mb-2 font-bold">Current time :</div>
+            <div id="currentTime" class="mb-4">Loading...</div>
+            <div>
+                <b>Name:</b> - <br />
+                <b>Birthdate:</b> - <br />
+                <b>Gender:</b> - <br />
+                <b>Message:</b> -
+            </div>
+            </div>
+            </div>
+            </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="text-center p-4 text-white">
+                &copy; 2025 Nua Future Technology Company.
+            </div>
+        </footer>
+
+        <!-- JS External -->
+        <script src="js\script.js"></script>
+
+    </body>
+</html>
